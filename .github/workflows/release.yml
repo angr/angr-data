@@ -1,0 +1,108 @@
+name: angr-data Release
+
+on:
+  pull_request:
+    paths:
+      - .github/workflows/release.yml
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (build only; do not publish, tag, or push)"
+        default: true
+        type: boolean
+        required: false
+      force:
+        description: "Release even if no .json files changed since the last release"
+        default: false
+        type: boolean
+        required: false
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+permissions:
+  contents: write # push the version-bump commit and the release tag
+  id-token: write # PyPI trusted publishing
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v4
+        with:
+          fetch-depth: 0 # full history + tags needed to diff against the last release
+
+      - name: Configure git
+        run: |
+          git config user.name "angr-bot"
+          git config user.email "angr-bot@users.noreply.github.com"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+
+      - name: Determine whether a release is needed
+        id: check
+        run: |
+          last_tag=$(git tag --list 'v*' --sort=-v:refname | head -n 1)
+          if [ -z "$last_tag" ]; then
+            echo "No previous release tag found; releasing."
+            echo "release=true" >> "$GITHUB_OUTPUT"
+          elif [ "${{ inputs.force }}" == "true" ]; then
+            echo "Force requested; releasing."
+            echo "release=true" >> "$GITHUB_OUTPUT"
+          else
+            changed=$(git diff --name-only "$last_tag"..HEAD -- '*.json')
+            if [ -n "$changed" ]; then
+              echo "Data files changed since ${last_tag}:"
+              echo "$changed"
+              echo "release=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "No .json changes since ${last_tag}; nothing to release."
+              echo "release=false" >> "$GITHUB_OUTPUT"
+            fi
+          fi
+
+      - name: Read release version
+        if: steps.check.outputs.release == 'true'
+        id: ver
+        run: |
+          version=$(python -c "import re; print(re.search(r'__version__\s*=\s*\"([^\"]+)\"', open('angr_data/__init__.py').read()).group(1))")
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "Releasing angr-data $version"
+
+      - name: Build distributions
+        if: steps.check.outputs.release == 'true'
+        run: |
+          rm -rf dist
+          uv build --out-dir dist
+          ls -l dist
+
+      - name: Publish to PyPI
+        if: steps.check.outputs.release == 'true' && inputs.dry_run == false
+        uses: pypa/gh-action-pypi-publish@cef221092ed1bacb1cc03d23a2d87d1d172e277b # v1.14.0
+        with:
+          verbose: true
+
+      - name: Tag release
+        if: steps.check.outputs.release == 'true' && inputs.dry_run == false
+        run: |
+          tag="v${{ steps.ver.outputs.version }}"
+          git tag -a "$tag" -m "release version ${{ steps.ver.outputs.version }}"
+          git push origin "$tag"
+
+      - name: Bump minor version on ${{ github.ref_name }}
+        if: steps.check.outputs.release == 'true' && inputs.dry_run == false
+        run: |
+          pip install packaging
+          cur="${{ steps.ver.outputs.version }}"
+          next=$(python -c "from packaging.version import Version; v=Version('$cur'); print(f'{v.major}.{v.minor + 1}.0')")
+          sed -i "s/$cur/$next/g" angr_data/__init__.py
+          git add angr_data/__init__.py
+          git commit -m "Bump version to $next [ci skip]"
+          git push origin "HEAD:${{ github.ref_name }}"
