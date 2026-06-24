@@ -6,6 +6,11 @@ on:
       - .github/workflows/release.yml
   workflow_dispatch:
     inputs:
+      version:
+        description: "Exact version to release (PEP 440), e.g. 0.1.0.post1. Leave empty to release the version in angr_data/__init__.py and bump the minor afterwards."
+        default: ""
+        type: string
+        required: false
       dry_run:
         description: "Dry run (build only; do not publish, tag, or push)"
         default: true
@@ -50,7 +55,10 @@ jobs:
         id: check
         run: |
           last_tag=$(git tag --list 'v*' --sort=-v:refname | head -n 1)
-          if [ -z "$last_tag" ]; then
+          if [ -n "${{ inputs.version }}" ]; then
+            echo "Explicit version '${{ inputs.version }}' requested; releasing."
+            echo "release=true" >> "$GITHUB_OUTPUT"
+          elif [ -z "$last_tag" ]; then
             echo "No previous release tag found; releasing."
             echo "release=true" >> "$GITHUB_OUTPUT"
           elif [ "${{ inputs.force }}" == "true" ]; then
@@ -68,13 +76,25 @@ jobs:
             fi
           fi
 
-      - name: Read release version
+      - name: Resolve release version
         if: steps.check.outputs.release == 'true'
         id: ver
         run: |
-          version=$(python -c "import re; print(re.search(r'__version__\s*=\s*\"([^\"]+)\"', open('angr_data/__init__.py').read()).group(1))")
+          pip install packaging
+          if [ -n "${{ inputs.version }}" ]; then
+            version="${{ inputs.version }}"
+            # Validate it is a legal PEP 440 version before doing anything.
+            python -c "from packaging.version import Version; Version('$version')"
+            # Override the package version so the built artifact uses it.
+            sed -i -E "s/^__version__ = \"[^\"]+\"/__version__ = \"$version\"/" angr_data/__init__.py
+            echo "manual=true" >> "$GITHUB_OUTPUT"
+            echo "Releasing angr-data $version (manually specified version)"
+          else
+            version=$(python -c "import re; print(re.search(r'__version__\s*=\s*\"([^\"]+)\"', open('angr_data/__init__.py').read()).group(1))")
+            echo "manual=false" >> "$GITHUB_OUTPUT"
+            echo "Releasing angr-data $version"
+          fi
           echo "version=$version" >> "$GITHUB_OUTPUT"
-          echo "Releasing angr-data $version"
 
       - name: Build distributions
         if: steps.check.outputs.release == 'true'
@@ -93,11 +113,18 @@ jobs:
         if: steps.check.outputs.release == 'true' && inputs.dry_run == false
         run: |
           tag="v${{ steps.ver.outputs.version }}"
+          if [ "${{ steps.ver.outputs.manual }}" == "true" ]; then
+            # Commit the manual version override so the tag reflects exactly what
+            # was published. The branch version line is left untouched (no minor
+            # bump below), so this commit is pushed as a tag only.
+            git add angr_data/__init__.py
+            git commit -m "Release ${{ steps.ver.outputs.version }} [ci skip]"
+          fi
           git tag -a "$tag" -m "release version ${{ steps.ver.outputs.version }}"
           git push origin "$tag"
 
       - name: Bump minor version on ${{ github.ref_name }}
-        if: steps.check.outputs.release == 'true' && inputs.dry_run == false
+        if: steps.check.outputs.release == 'true' && inputs.dry_run == false && steps.ver.outputs.manual != 'true'
         run: |
           pip install packaging
           cur="${{ steps.ver.outputs.version }}"
