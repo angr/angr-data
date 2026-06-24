@@ -26,6 +26,11 @@ content-type = "text/markdown"
 Homepage = "https://angr.io/"
 Repository = "https://github.com/angr/angr-data"
 
+# Ship a PyInstaller hook so frozen apps (e.g. angr-management) that depend on
+# angr_data automatically bundle its on-disk data files.
+[project.entry-points.pyinstaller40]
+hook-dirs = "angr_data._pyinstaller:get_hook_dirs"
+
 [tool.setuptools]
 include-package-data = true
 
