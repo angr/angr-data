@@ -12,6 +12,7 @@ import angr_data
 # Absolute path to a bundled data directory or file:
 angr_data.get_path("procedures", "definitions", "win32")
 angr_data.get_path("rust", "analyses", "type_db", "1.39.0.json")
+angr_data.get_path("go", "sigdb", "go1.22.json")
 ```
 
 ## Versioning
