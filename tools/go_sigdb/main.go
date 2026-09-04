@@ -470,7 +470,14 @@ func (g *gen) funcSigOf(sig *types.Signature, recvType types.Type) *funcSig {
 	params := sig.Params()
 	for i := 0; i < params.Len(); i++ {
 		p := params.At(i)
-		fs.Params = append(fs.Params, [2]string{paramName(p.Name(), "~p", idx), g.typeString(p.Type())})
+		ts := g.typeString(p.Type())
+		if sig.Variadic() && i == params.Len()-1 {
+			// spelled the way Go declares it: "...T" instead of "[]T"
+			if sl, ok := types.Unalias(p.Type()).(*types.Slice); ok {
+				ts = "..." + g.typeString(sl.Elem())
+			}
+		}
+		fs.Params = append(fs.Params, [2]string{paramName(p.Name(), "~p", idx), ts})
 		idx++
 	}
 	results := sig.Results()

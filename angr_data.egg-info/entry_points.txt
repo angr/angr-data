@@ -1,0 +1,2 @@
+[pyinstaller40]
+hook-dirs = angr_data._pyinstaller:get_hook_dirs
