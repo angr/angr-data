@@ -15,16 +15,16 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PFLT_FILTER', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Filter', 'EcpContext']}"
 		},
 		"FltAcquirePushLockExclusive": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock']}"
 		},
 		"FltAcquirePushLockExclusiveEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock', 'Flags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock', 'Flags']}"
 		},
 		"FltAcquirePushLockShared": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock']}"
 		},
 		"FltAcquirePushLockSharedEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock', 'Flags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock', 'Flags']}"
 		},
 		"FltAcquireResourceExclusive": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'ERESOURCE', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Resource']}"
@@ -45,7 +45,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PFLT_INSTANCE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FILE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FLT_CALLBACK_DATA', 'ot': 'struct'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Instance', 'FileObject', 'Flags', 'RetNewCallbackData']}"
 		},
 		"FltAllocateContext": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PFLT_FILTER', 'ot': 'ptr'}, {'_t': 'short', 'signed': false, 'label': 'UInt16'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'PFLT_CONTEXT', 'ot': 'ptr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Filter', 'ContextType', 'ContextSize', 'PoolType', 'ReturnedContext']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PFLT_FILTER', 'ot': 'ptr'}, {'_t': 'short', 'signed': false, 'label': 'UInt16'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'PFLT_CONTEXT', 'ot': 'ptr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Filter', 'ContextType', 'ContextSize', 'PoolType', 'ReturnedContext']}"
 		},
 		"FltAllocateDeferredIoWorkItem": {
 			"proto": "{'_t': 'func', 'args': [], 'returnty': {'_t': '_ref', 'name': 'PFLT_DEFERRED_IO_WORKITEM', 'ot': 'ptr'}, 'arg_names': []}"
@@ -66,7 +66,7 @@
 			"proto": "{'_t': 'func', 'args': [], 'returnty': {'_t': '_ref', 'name': 'PFLT_GENERIC_WORKITEM', 'ot': 'ptr'}, 'arg_names': []}"
 		},
 		"FltAllocatePoolAlignedWithTag": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PFLT_INSTANCE', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['Instance', 'PoolType', 'NumberOfBytes', 'Tag']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PFLT_INSTANCE', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['Instance', 'PoolType', 'NumberOfBytes', 'Tag']}"
 		},
 		"FltApplyPriorityInfoThread": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_PRIORITY_INFO', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_PRIORITY_INFO', 'ot': 'struct'}, 'disp': 2}, {'_t': '_ref', 'name': 'PETHREAD', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['InputPriorityInfo', 'OutputPriorityInfo', 'Thread']}"
@@ -210,7 +210,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PFLT_INSTANCE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'PFLT_CONTEXT', 'ot': 'ptr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Instance', 'OldContext']}"
 		},
 		"FltDeletePushLock": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock']}"
 		},
 		"FltDeleteStreamContext": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PFLT_INSTANCE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FILE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'PFLT_CONTEXT', 'ot': 'ptr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Instance', 'FileObject', 'OldContext']}"
@@ -324,7 +324,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FLT_RELATED_OBJECTS', 'ot': 'struct'}, 'disp': 1}, {'_t': 'short', 'signed': false, 'label': 'UInt16'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FLT_RELATED_CONTEXTS', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['FltObjects', 'DesiredContexts', 'Contexts']}"
 		},
 		"FltGetContextsEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FLT_RELATED_OBJECTS', 'ot': 'struct'}, 'disp': 1}, {'_t': 'short', 'signed': false, 'label': 'UInt16'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FLT_RELATED_CONTEXTS_EX', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['FltObjects', 'DesiredContexts', 'ContextsSize', 'Contexts']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FLT_RELATED_OBJECTS', 'ot': 'struct'}, 'disp': 1}, {'_t': 'short', 'signed': false, 'label': 'UInt16'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FLT_RELATED_CONTEXTS_EX', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['FltObjects', 'DesiredContexts', 'ContextsSize', 'Contexts']}"
 		},
 		"FltGetDestinationFileNameInformation": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PFLT_INSTANCE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FILE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FLT_FILE_NAME_INFORMATION', 'ot': 'struct'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Instance', 'FileObject', 'RootDirectory', 'FileName', 'FileNameLength', 'NameOptions', 'RetFileNameInformation']}"
@@ -465,7 +465,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PFLT_VOLUME', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FLT_VOLUME_PROPERTIES', 'ot': 'struct'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Volume', 'VolumeProperties', 'VolumePropertiesLength', 'LengthReturned']}"
 		},
 		"FltInitExtraCreateParameterLookasideList": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PFLT_FILTER', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Filter', 'Lookaside', 'Flags', 'Size', 'Tag']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PFLT_FILTER', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Filter', 'Lookaside', 'Flags', 'Size', 'Tag']}"
 		},
 		"FltInitializeFileLock": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FILE_LOCK', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['FileLock']}"
@@ -474,7 +474,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Oplock']}"
 		},
 		"FltInitializePushLock": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock']}"
 		},
 		"FltInsertExtraCreateParameter": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PFLT_FILTER', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'ECP_LIST', 'ot': 'ptr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Filter', 'EcpList', 'EcpContext']}"
@@ -651,16 +651,16 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FLT_RELATED_CONTEXTS', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Contexts']}"
 		},
 		"FltReleaseContextsEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FLT_RELATED_CONTEXTS_EX', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['ContextsSize', 'Contexts']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FLT_RELATED_CONTEXTS_EX', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['ContextsSize', 'Contexts']}"
 		},
 		"FltReleaseFileNameInformation": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FLT_FILE_NAME_INFORMATION', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['FileNameInformation']}"
 		},
 		"FltReleasePushLock": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock']}"
 		},
 		"FltReleasePushLockEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock', 'Flags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock', 'Flags']}"
 		},
 		"FltReleaseResource": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'ERESOURCE', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Resource']}"

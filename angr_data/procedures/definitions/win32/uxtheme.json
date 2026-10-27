@@ -12,16 +12,16 @@
 	},
 	"functions": {
 		"BeginBufferedAnimation": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HWND', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'HDC', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RECT', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'BP_BUFFERFORMAT', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'BP_PAINTPARAMS', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'BP_ANIMATIONPARAMS', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'HDC', 'ot': 'ptr'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'HDC', 'ot': 'ptr'}, 'disp': 2}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr'}, 'arg_names': ['hwnd', 'hdcTarget', 'prcTarget', 'dwFormat', 'pPaintParams', 'pAnimationParams', 'phdcFrom', 'phdcTo']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HWND', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'HDC', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RECT', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'BP_BUFFERFORMAT', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'BP_PAINTPARAMS', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'BP_ANIMATIONPARAMS', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'HDC', 'ot': 'ptr'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'HDC', 'ot': 'ptr'}, 'disp': 2}], 'returnty': {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, 'arg_names': ['hwnd', 'hdcTarget', 'prcTarget', 'dwFormat', 'pPaintParams', 'pAnimationParams', 'phdcFrom', 'phdcTo']}"
 		},
 		"BeginBufferedPaint": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HDC', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RECT', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'BP_BUFFERFORMAT', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'BP_PAINTPARAMS', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'HDC', 'ot': 'ptr'}, 'disp': 2}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr'}, 'arg_names': ['hdcTarget', 'prcTarget', 'dwFormat', 'pPaintParams', 'phdc']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HDC', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RECT', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'BP_BUFFERFORMAT', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'BP_PAINTPARAMS', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'HDC', 'ot': 'ptr'}, 'disp': 2}], 'returnty': {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, 'arg_names': ['hdcTarget', 'prcTarget', 'dwFormat', 'pPaintParams', 'phdc']}"
 		},
 		"BeginPanningFeedback": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HWND', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['hwnd']}"
 		},
 		"BufferedPaintClear": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RECT', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': ['hBufferedPaint', 'prc']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RECT', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': ['hBufferedPaint', 'prc']}"
 		},
 		"BufferedPaintInit": {
 			"proto": "{'_t': 'func', 'args': [], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': []}"
@@ -30,7 +30,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HWND', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'HDC', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['hwnd', 'hdcTarget']}"
 		},
 		"BufferedPaintSetAlpha": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'char', 'signed': false, 'label': 'Byte'}], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': ['hBufferedPaint', 'prc', 'alpha']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'char', 'signed': false, 'label': 'Byte'}], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': ['hBufferedPaint', 'prc', 'alpha']}"
 		},
 		"BufferedPaintStopAllAnimations": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HWND', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': ['hwnd']}"
@@ -72,25 +72,25 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': ['fEnable']}"
 		},
 		"EndBufferedAnimation": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': ['hbpAnimation', 'fUpdateTarget']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': ['hbpAnimation', 'fUpdateTarget']}"
 		},
 		"EndBufferedPaint": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': ['hBufferedPaint', 'fUpdateTarget']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': ['hBufferedPaint', 'fUpdateTarget']}"
 		},
 		"EndPanningFeedback": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HWND', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['hwnd', 'fAnimateBack']}"
 		},
 		"GetBufferedPaintBits": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RGBQUAD', 'ot': 'struct'}}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int32'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': ['hBufferedPaint', 'ppbBuffer', 'pcxRow']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RGBQUAD', 'ot': 'struct'}}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int32'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': ['hBufferedPaint', 'ppbBuffer', 'pcxRow']}"
 		},
 		"GetBufferedPaintDC": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'HDC', 'ot': 'ptr'}, 'arg_names': ['hBufferedPaint']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}], 'returnty': {'_t': '_ref', 'name': 'HDC', 'ot': 'ptr'}, 'arg_names': ['hBufferedPaint']}"
 		},
 		"GetBufferedPaintTargetDC": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'HDC', 'ot': 'ptr'}, 'arg_names': ['hBufferedPaint']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}], 'returnty': {'_t': '_ref', 'name': 'HDC', 'ot': 'ptr'}, 'arg_names': ['hBufferedPaint']}"
 		},
 		"GetBufferedPaintTargetRect": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RECT', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': ['hBufferedPaint', 'prc']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RECT', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': ['hBufferedPaint', 'prc']}"
 		},
 		"GetCurrentThemeName": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': true, 'label': 'Char'}, 'label': 'LPArray', 'disp': 2}, {'_t': 'int', 'label': 'Int32'}, {'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': true, 'label': 'Char'}, 'label': 'LPArray', 'disp': 2}, {'_t': 'int', 'label': 'Int32'}, {'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': true, 'label': 'Char'}, 'label': 'LPArray', 'disp': 2}, {'_t': 'int', 'label': 'Int32'}], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': ['pszThemeFileName', 'cchMaxNameChars', 'pszColorBuff', 'cchMaxColorChars', 'pszSizeBuff', 'cchMaxSizeChars']}"

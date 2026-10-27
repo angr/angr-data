@@ -282,7 +282,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HUIAEVENT', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': ['hEvent']}"
 		},
 		"UiaReturnRawElementProvider": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HWND', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'WPARAM', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'LPARAM', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'IRawElementProviderSimple', 'ot': 'bot'}], 'returnty': {'_t': '_ref', 'name': 'LRESULT', 'ot': 'ptr'}, 'arg_names': ['hwnd', 'wParam', 'lParam', 'el']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HWND', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'WPARAM', 'ot': 'len'}, {'_t': '_ref', 'name': 'LPARAM', 'ot': 'len'}, {'_t': '_ref', 'name': 'IRawElementProviderSimple', 'ot': 'bot'}], 'returnty': {'_t': '_ref', 'name': 'LRESULT', 'ot': 'len'}, 'arg_names': ['hwnd', 'wParam', 'lParam', 'el']}"
 		},
 		"UiaSetFocus": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HUIANODE', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': ['hnode']}"

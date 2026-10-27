@@ -51,7 +51,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['idThread']}"
 		},
 		"ImmEnumInputContext": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HIMC', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'LPARAM', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['param0', 'param1']}, 'disp': 1}, {'_t': '_ref', 'name': 'LPARAM', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['idThread', 'lpfn', 'lParam']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HIMC', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'LPARAM', 'ot': 'len'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['param0', 'param1']}, 'disp': 1}, {'_t': '_ref', 'name': 'LPARAM', 'ot': 'len'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['idThread', 'lpfn', 'lParam']}"
 		},
 		"ImmEnumRegisterWordA": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HKL', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PSTR', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'PSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}], 'returnty': {'_t': 'int', 'label': 'Int32'}, 'arg_names': ['lpszReading', 'param1', 'lpszString', 'param3']}, 'disp': 1}, {'_t': '_ref', 'name': 'PSTR', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'PSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}], 'returnty': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'arg_names': ['param0', 'param1', 'lpszReading', 'param3', 'lpszRegister', 'param5']}"
@@ -60,10 +60,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HKL', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}], 'returnty': {'_t': 'int', 'label': 'Int32'}, 'arg_names': ['lpszReading', 'param1', 'lpszString', 'param3']}, 'disp': 1}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}], 'returnty': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'arg_names': ['param0', 'param1', 'lpszReading', 'param3', 'lpszRegister', 'param5']}"
 		},
 		"ImmEscapeA": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HKL', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'HIMC', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'IME_ESCAPE', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'LRESULT', 'ot': 'ptr'}, 'arg_names': ['param0', 'param1', 'param2', 'param3']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HKL', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'HIMC', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'IME_ESCAPE', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'LRESULT', 'ot': 'len'}, 'arg_names': ['param0', 'param1', 'param2', 'param3']}"
 		},
 		"ImmEscapeW": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HKL', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'HIMC', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'IME_ESCAPE', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'LRESULT', 'ot': 'ptr'}, 'arg_names': ['param0', 'param1', 'param2', 'param3']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HKL', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'HIMC', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'IME_ESCAPE', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'LRESULT', 'ot': 'len'}, 'arg_names': ['param0', 'param1', 'param2', 'param3']}"
 		},
 		"ImmGenerateMessage": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HIMC', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['param0']}"
@@ -177,10 +177,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HKL', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['param0']}"
 		},
 		"ImmIsUIMessageA": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HWND', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'WPARAM', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'LPARAM', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['param0', 'param1', 'param2', 'param3']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HWND', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'WPARAM', 'ot': 'len'}, {'_t': '_ref', 'name': 'LPARAM', 'ot': 'len'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['param0', 'param1', 'param2', 'param3']}"
 		},
 		"ImmIsUIMessageW": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HWND', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'WPARAM', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'LPARAM', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['param0', 'param1', 'param2', 'param3']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HWND', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'WPARAM', 'ot': 'len'}, {'_t': '_ref', 'name': 'LPARAM', 'ot': 'len'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['param0', 'param1', 'param2', 'param3']}"
 		},
 		"ImmLockIMC": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HIMC', 'ot': 'ptr'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'INPUTCONTEXT', 'ot': 'struct'}}, 'arg_names': ['param0']}"
@@ -204,10 +204,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HWND', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'HIMC', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['param0', 'param1']}"
 		},
 		"ImmRequestMessageA": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HIMC', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'WPARAM', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'LPARAM', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'LRESULT', 'ot': 'ptr'}, 'arg_names': ['param0', 'param1', 'param2']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HIMC', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'WPARAM', 'ot': 'len'}, {'_t': '_ref', 'name': 'LPARAM', 'ot': 'len'}], 'returnty': {'_t': '_ref', 'name': 'LRESULT', 'ot': 'len'}, 'arg_names': ['param0', 'param1', 'param2']}"
 		},
 		"ImmRequestMessageW": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HIMC', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'WPARAM', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'LPARAM', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'LRESULT', 'ot': 'ptr'}, 'arg_names': ['param0', 'param1', 'param2']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HIMC', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'WPARAM', 'ot': 'len'}, {'_t': '_ref', 'name': 'LPARAM', 'ot': 'len'}], 'returnty': {'_t': '_ref', 'name': 'LRESULT', 'ot': 'len'}, 'arg_names': ['param0', 'param1', 'param2']}"
 		},
 		"ImmSetCandidateWindow": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HIMC', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'CANDIDATEFORM', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['param0', 'lpCandidate']}"
