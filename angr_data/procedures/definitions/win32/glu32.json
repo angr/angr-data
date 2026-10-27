@@ -90,7 +90,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'GLUtesselator', 'ot': 'ptr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['tess', 'type']}"
 		},
 		"gluNurbsCallback": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'GLUnurbs', 'ot': 'ptr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['nobj', 'which', 'fn']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'GLUnurbs', 'ot': 'ptr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['nobj', 'which', 'fn']}"
 		},
 		"gluNurbsCurve": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'GLUnurbs', 'ot': 'ptr'}, 'disp': 0}, {'_t': 'int', 'label': 'Int32'}, {'_t': 'ptr', 'pts_to': {'_t': 'float'}, 'disp': 0}, {'_t': 'int', 'label': 'Int32'}, {'_t': 'ptr', 'pts_to': {'_t': 'float'}, 'disp': 0}, {'_t': 'int', 'label': 'Int32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['nobj', 'nknots', 'knot', 'stride', 'ctlarray', 'order', 'type']}"
@@ -120,7 +120,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'GLUnurbs', 'ot': 'ptr'}, 'disp': 0}, {'_t': 'int', 'label': 'Int32'}, {'_t': 'ptr', 'pts_to': {'_t': 'float'}, 'disp': 0}, {'_t': 'int', 'label': 'Int32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['nobj', 'count', 'array', 'stride', 'type']}"
 		},
 		"gluQuadricCallback": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'GLUquadric', 'ot': 'ptr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['qobj', 'which', 'fn']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'GLUquadric', 'ot': 'ptr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['qobj', 'which', 'fn']}"
 		},
 		"gluQuadricDrawStyle": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'GLUquadric', 'ot': 'ptr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['quadObject', 'drawStyle']}"
@@ -147,7 +147,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'GLUtesselator', 'ot': 'ptr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['tess', 'polygon_data']}"
 		},
 		"gluTessCallback": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'GLUtesselator', 'ot': 'ptr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['tess', 'which', 'fn']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'GLUtesselator', 'ot': 'ptr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['tess', 'which', 'fn']}"
 		},
 		"gluTessEndContour": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'GLUtesselator', 'ot': 'ptr'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['tess']}"

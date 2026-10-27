@@ -12,7 +12,7 @@
 	},
 	"functions": {
 		"PrjAllocateAlignedBuffer": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['namespaceVirtualizationContext', 'size']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT', 'ot': 'ptr'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['namespaceVirtualizationContext', 'size']}"
 		},
 		"PrjClearNegativePathCache": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'HRESULT', 'ot': 'int'}, 'arg_names': ['namespaceVirtualizationContext', 'totalEntryNumber']}"

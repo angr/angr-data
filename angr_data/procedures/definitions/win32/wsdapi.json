@@ -12,7 +12,7 @@
 	},
 	"functions": {
 		"WSDAllocateLinkedMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['pParent', 'cbSize']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['pParent', 'cbSize']}"
 		},
 		"WSDAttachLinkedMemory": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['pParent', 'pChild']}"

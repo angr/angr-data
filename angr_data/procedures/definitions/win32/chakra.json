@@ -150,10 +150,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['context', 'runtime']}"
 		},
 		"JsGetRuntimeMemoryLimit": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['runtime', 'memoryLimit']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['runtime', 'memoryLimit']}"
 		},
 		"JsGetRuntimeMemoryUsage": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['runtime', 'memoryUsage']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['runtime', 'memoryUsage']}"
 		},
 		"JsGetStringLength": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int32'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['stringValue', 'length']}"
@@ -195,13 +195,13 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'float'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['value', 'doubleValue']}"
 		},
 		"JsParseScript": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['script', 'sourceContext', 'sourceUrl', 'result']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['script', 'sourceContext', 'sourceUrl', 'result']}"
 		},
 		"JsParseSerializedScript": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['script', 'buffer', 'sourceContext', 'sourceUrl', 'result']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['script', 'buffer', 'sourceContext', 'sourceUrl', 'result']}"
 		},
 		"JsPointerToString": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': true, 'label': 'Char'}, 'label': 'LPArray', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['stringValue', 'stringLength', 'value']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': true, 'label': 'Char'}, 'label': 'LPArray', 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['stringValue', 'stringLength', 'value']}"
 		},
 		"JsPreventExtension": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['object']}"
@@ -210,10 +210,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['ref', 'count']}"
 		},
 		"JsRunScript": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['script', 'sourceContext', 'sourceUrl', 'result']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['script', 'sourceContext', 'sourceUrl', 'result']}"
 		},
 		"JsRunSerializedScript": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['script', 'buffer', 'sourceContext', 'sourceUrl', 'result']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['script', 'buffer', 'sourceContext', 'sourceUrl', 'result']}"
 		},
 		"JsSerializeScript": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'label': 'LPArray', 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['script', 'buffer', 'bufferSize']}"
@@ -240,10 +240,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['callbackState']}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['runtime', 'callbackState', 'beforeCollectCallback']}"
 		},
 		"JsSetRuntimeMemoryAllocationCallback": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, {'_t': '_ref', 'name': 'JsMemoryEventType', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}], 'returnty': {'_t': 'bool', 'signed': true, 'label': 'Boolean'}, 'arg_names': ['callbackState', 'allocationEvent', 'allocationSize']}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['runtime', 'callbackState', 'allocationCallback']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, {'_t': '_ref', 'name': 'JsMemoryEventType', 'ot': 'enum'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'bool', 'signed': true, 'label': 'Boolean'}, 'arg_names': ['callbackState', 'allocationEvent', 'allocationSize']}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['runtime', 'callbackState', 'allocationCallback']}"
 		},
 		"JsSetRuntimeMemoryLimit": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['runtime', 'memoryLimit']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['runtime', 'memoryLimit']}"
 		},
 		"JsStartDebugging": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'IDebugApplication32', 'ot': 'bot'}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['debugApplication']}"
@@ -258,7 +258,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bool', 'signed': true, 'label': 'Boolean'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['object1', 'object2', 'result']}"
 		},
 		"JsStringToPointer": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'short', 'signed': false, 'label': 'UInt16'}}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['value', 'stringValue', 'stringLength']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'short', 'signed': false, 'label': 'UInt16'}}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['value', 'stringValue', 'stringLength']}"
 		},
 		"JsValueToVariant": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'VARIANT', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'JsErrorCode', 'ot': 'enum'}, 'arg_names': ['object', 'variant']}"

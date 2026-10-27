@@ -163,7 +163,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Bcb']}"
 		},
 		"CcUnpinDataForThread": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Bcb', 'ResourceThreadId']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Bcb', 'ResourceThreadId']}"
 		},
 		"CcUnpinRepinnedBcb": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_STATUS_BLOCK', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Bcb', 'WriteThrough', 'IoStatus']}"
@@ -175,10 +175,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FILE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 1}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['FileObject', 'StartOffset', 'EndOffset', 'Wait']}"
 		},
 		"CmCallbackGetKeyObjectID": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Cookie', 'Object', 'ObjectID', 'ObjectName']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Cookie', 'Object', 'ObjectID', 'ObjectName']}"
 		},
 		"CmCallbackGetKeyObjectIDEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Cookie', 'Object', 'ObjectID', 'ObjectName', 'Flags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Cookie', 'Object', 'ObjectID', 'ObjectName', 'Flags']}"
 		},
 		"CmCallbackReleaseKeyObjectIDEx": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['ObjectName']}"
@@ -262,10 +262,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FAST_MUTEX', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['FastMutex']}"
 		},
 		"ExAcquirePushLockExclusiveEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock', 'Flags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock', 'Flags']}"
 		},
 		"ExAcquirePushLockSharedEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock', 'Flags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock', 'Flags']}"
 		},
 		"ExAcquireResourceExclusiveLite": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'ERESOURCE', 'ot': 'struct'}, 'disp': 0}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['Resource', 'Wait']}"
@@ -307,25 +307,25 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'PEX_RUNDOWN_REF_CACHE_AWARE', 'ot': 'ptr'}, 'arg_names': ['PoolType', 'PoolTag']}"
 		},
 		"ExAllocatePool": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['PoolType', 'NumberOfBytes']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['PoolType', 'NumberOfBytes']}"
 		},
 		"ExAllocatePool2": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'signed': false, 'label': 'UInt64'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['Flags', 'NumberOfBytes', 'Tag']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'signed': false, 'label': 'UInt64'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['Flags', 'NumberOfBytes', 'Tag']}"
 		},
 		"ExAllocatePool3": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'signed': false, 'label': 'UInt64'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'POOL_EXTENDED_PARAMETER', 'ot': 'struct'}, 'label': 'LPArray', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['Flags', 'NumberOfBytes', 'Tag', 'ExtendedParameters', 'ExtendedParametersCount']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'signed': false, 'label': 'UInt64'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'POOL_EXTENDED_PARAMETER', 'ot': 'struct'}, 'label': 'LPArray', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['Flags', 'NumberOfBytes', 'Tag', 'ExtendedParameters', 'ExtendedParametersCount']}"
 		},
 		"ExAllocatePoolWithQuota": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['PoolType', 'NumberOfBytes']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['PoolType', 'NumberOfBytes']}"
 		},
 		"ExAllocatePoolWithQuotaTag": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['PoolType', 'NumberOfBytes', 'Tag']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['PoolType', 'NumberOfBytes', 'Tag']}"
 		},
 		"ExAllocatePoolWithTag": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['PoolType', 'NumberOfBytes', 'Tag']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['PoolType', 'NumberOfBytes', 'Tag']}"
 		},
 		"ExAllocatePoolWithTagPriority": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'EX_POOL_PRIORITY', 'ot': 'enum'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['PoolType', 'NumberOfBytes', 'Tag', 'Priority']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'EX_POOL_PRIORITY', 'ot': 'enum'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['PoolType', 'NumberOfBytes', 'Tag', 'Priority']}"
 		},
 		"ExAllocateTimer": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': []}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'PEX_TIMER', 'ot': 'ptr'}, 'arg_names': ['Callback', 'CallbackContext', 'Attributes']}"
@@ -343,7 +343,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'PCALLBACK_OBJECT', 'ot': 'ptr'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'OBJECT_ATTRIBUTES', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['CallbackObject', 'ObjectAttributes', 'Create', 'AllowMultipleCallbacks']}"
 		},
 		"ExCreatePool": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'POOL_CREATE_EXTENDED_PARAMS', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Flags', 'Tag', 'Params', 'PoolHandle']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'POOL_CREATE_EXTENDED_PARAMS', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Flags', 'Tag', 'Params', 'PoolHandle']}"
 		},
 		"ExDeleteResourceLite": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'ERESOURCE', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Resource']}"
@@ -403,7 +403,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['FirmwareTableProviderSignature', 'FirmwareTableID', 'FirmwareTableBuffer', 'BufferLength', 'ReturnLength']}"
 		},
 		"ExInitializePushLock": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock']}"
 		},
 		"ExInitializeResourceLite": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'ERESOURCE', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Resource']}"
@@ -412,7 +412,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'EX_RUNDOWN_REF', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['RunRef']}"
 		},
 		"ExInitializeRundownProtectionCacheAware": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PEX_RUNDOWN_REF_CACHE_AWARE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['RunRefCacheAware', 'RunRefSize']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PEX_RUNDOWN_REF_CACHE_AWARE', 'ot': 'ptr'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['RunRefCacheAware', 'RunRefSize']}"
 		},
 		"ExInitializeRundownProtectionCacheAwareEx": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PEX_RUNDOWN_REF_CACHE_AWARE', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['RunRefCacheAware', 'Flags']}"
@@ -421,10 +421,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'ZONE_HEADER', 'ot': 'struct'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Zone', 'BlockSize', 'InitialSegment', 'InitialSegmentSize']}"
 		},
 		"ExInterlockedAddLargeInteger": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 0}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': 'llong', 'label': 'Int64'}, 'arg_names': ['Addend', 'Increment', 'Lock']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 0}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': 'llong', 'label': 'Int64'}, 'arg_names': ['Addend', 'Increment', 'Lock']}"
 		},
 		"ExInterlockedExtendZone": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'ZONE_HEADER', 'ot': 'struct'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Zone', 'Segment', 'SegmentSize', 'Lock']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'ZONE_HEADER', 'ot': 'struct'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Zone', 'Segment', 'SegmentSize', 'Lock']}"
 		},
 		"ExIsManufacturingModeEnabled": {
 			"proto": "{'_t': 'func', 'args': [], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': []}"
@@ -448,7 +448,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['CallbackObject', 'Argument1', 'Argument2']}"
 		},
 		"ExQueryPoolBlockSize": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'disp': 2}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'arg_names': ['PoolBlock', 'QuotaCharged']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'disp': 2}], 'returnty': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'arg_names': ['PoolBlock', 'QuotaCharged']}"
 		},
 		"ExQueryTimerResolution": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['MaximumTime', 'MinimumTime', 'CurrentTime']}"
@@ -484,16 +484,16 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FAST_MUTEX', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['FastMutex']}"
 		},
 		"ExReleasePushLockExclusiveEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock', 'Flags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock', 'Flags']}"
 		},
 		"ExReleasePushLockSharedEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock', 'Flags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PushLock', 'Flags']}"
 		},
 		"ExReleaseResourceAndLeaveCriticalRegion": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'ERESOURCE', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Resource']}"
 		},
 		"ExReleaseResourceForThreadLite": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'ERESOURCE', 'ot': 'struct'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Resource', 'ResourceThreadId']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'ERESOURCE', 'ot': 'struct'}, 'disp': 0}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Resource', 'ResourceThreadId']}"
 		},
 		"ExReleaseResourceLite": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'ERESOURCE', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Resource']}"
@@ -529,10 +529,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PEX_RUNDOWN_REF_CACHE_AWARE', 'ot': 'ptr'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['RunRefCacheAware']}"
 		},
 		"ExSecurePoolUpdate": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['SecurePoolHandle', 'Tag', 'Allocation', 'Cookie', 'Offset', 'Size', 'Buffer']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['SecurePoolHandle', 'Tag', 'Allocation', 'Cookie', 'Offset', 'Size', 'Buffer']}"
 		},
 		"ExSecurePoolValidate": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'arg_names': ['SecurePoolHandle', 'Tag', 'Allocation', 'Cookie']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'arg_names': ['SecurePoolHandle', 'Tag', 'Allocation', 'Cookie']}"
 		},
 		"ExSetFirmwareEnvironmentVariable": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'Guid', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['VariableName', 'VendorGuid', 'Value', 'ValueLength', 'Attributes']}"
@@ -550,7 +550,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}], 'returnty': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'arg_names': ['DesiredTime', 'SetResolution']}"
 		},
 		"ExSizeOfRundownProtectionCacheAware": {
-			"proto": "{'_t': 'func', 'args': [], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'arg_names': []}"
+			"proto": "{'_t': 'func', 'args': [], 'returnty': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'arg_names': []}"
 		},
 		"ExSystemTimeToLocalTime": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['SystemTime', 'LocalTime']}"
@@ -799,7 +799,7 @@
 			"proto": "{'_t': 'func', 'args': [], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': []}"
 		},
 		"FsRtlInitExtraCreateParameterLookasideList": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Lookaside', 'Flags', 'Size', 'Tag']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Lookaside', 'Flags', 'Size', 'Tag']}"
 		},
 		"FsRtlInitializeBaseMcb": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'BASE_MCB', 'ot': 'struct'}, 'disp': 2}, {'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Mcb', 'PoolType']}"
@@ -889,7 +889,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['Status']}"
 		},
 		"FsRtlIssueDeviceIoControl": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'char', 'signed': false, 'label': 'Byte'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DeviceObject', 'IoCtl', 'Flags', 'InputBuffer', 'InputBufferLength', 'OutputBuffer', 'OutputBufferLength', 'IosbInformation']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'char', 'signed': false, 'label': 'Byte'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DeviceObject', 'IoCtl', 'Flags', 'InputBuffer', 'InputBufferLength', 'OutputBuffer', 'OutputBufferLength', 'IosbInformation']}"
 		},
 		"FsRtlKernelFsControlFile": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FILE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['FileObject', 'FsControlCode', 'InputBuffer', 'InputBufferLength', 'OutputBuffer', 'OutputBufferLength', 'RetOutputBufferSize']}"
@@ -1168,10 +1168,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Irql']}"
 		},
 		"IoAcquireKsrPersistentMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DRIVER_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DriverObject', 'PhysicalDeviceObject', 'Buffer', 'Size']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DRIVER_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DriverObject', 'PhysicalDeviceObject', 'Buffer', 'Size']}"
 		},
 		"IoAcquireKsrPersistentMemoryEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DRIVER_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'short', 'signed': false, 'label': 'UInt16'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DriverObject', 'PhysicalDeviceObject', 'PhysicalDeviceId', 'DataTag', 'DataVersion', 'Buffer', 'Size']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DRIVER_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'short', 'signed': false, 'label': 'UInt16'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DriverObject', 'PhysicalDeviceObject', 'PhysicalDeviceId', 'DataTag', 'DataVersion', 'Buffer', 'Size']}"
 		},
 		"IoAcquireRemoveLockEx": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_REMOVE_LOCK', 'ot': 'struct'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': '_ref', 'name': 'PSTR', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['RemoveLock', 'Tag', 'File', 'Line', 'RemlockSize']}"
@@ -1282,7 +1282,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IRP', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Irp']}"
 		},
 		"IoConnectInterrupt": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'PKINTERRUPT', 'ot': 'ptr'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': []}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'char', 'signed': false, 'label': 'Byte'}, {'_t': 'char', 'signed': false, 'label': 'Byte'}, {'_t': '_ref', 'name': 'KINTERRUPT_MODE', 'ot': 'enum'}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['InterruptObject', 'ServiceRoutine', 'ServiceContext', 'SpinLock', 'Vector', 'Irql', 'SynchronizeIrql', 'InterruptMode', 'ShareVector', 'ProcessorEnableMask', 'FloatingSave']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'PKINTERRUPT', 'ot': 'ptr'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': []}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'char', 'signed': false, 'label': 'Byte'}, {'_t': 'char', 'signed': false, 'label': 'Byte'}, {'_t': '_ref', 'name': 'KINTERRUPT_MODE', 'ot': 'enum'}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['InterruptObject', 'ServiceRoutine', 'ServiceContext', 'SpinLock', 'Vector', 'Irql', 'SynchronizeIrql', 'InterruptMode', 'ShareVector', 'ProcessorEnableMask', 'FloatingSave']}"
 		},
 		"IoConnectInterruptEx": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_CONNECT_INTERRUPT_PARAMETERS', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Parameters']}"
@@ -1510,7 +1510,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'llong', 'signed': false, 'label': 'UInt64'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DMA_IOMMU_INTERFACE_EX', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Version', 'Flags', 'InterfaceOut']}"
 		},
 		"IoGetIrpExtraCreateParameter": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IRP', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Irp', 'ExtraCreateParameter']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IRP', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Irp', 'ExtraCreateParameter']}"
 		},
 		"IoGetLowerDeviceObject": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}}, 'arg_names': ['DeviceObject']}"
@@ -1546,7 +1546,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FILE_OBJECT', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_FOEXT_SILO_PARAMETERS', 'ot': 'struct'}}, 'arg_names': ['FileObject']}"
 		},
 		"IoGetStackLimits": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['LowLimit', 'HighLimit']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['LowLimit', 'HighLimit']}"
 		},
 		"IoGetTopLevelIrp": {
 			"proto": "{'_t': 'func', 'args': [], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IRP', 'ot': 'struct'}}, 'arg_names': []}"
@@ -1645,10 +1645,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'OBJECT_ATTRIBUTES', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_STATUS_BLOCK', 'ot': 'struct'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'FILE_INFORMATION_CLASS', 'ot': 'enum'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_DRIVER_CREATE_CONTEXT', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ObjectAttributes', 'IoStatusBlock', 'FileInformation', 'Length', 'FileInformationClass', 'Options', 'DriverContext']}"
 		},
 		"IoQueryKsrPersistentMemorySize": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DRIVER_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DriverObject', 'PhysicalDeviceObject', 'BufferSize']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DRIVER_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DriverObject', 'PhysicalDeviceObject', 'BufferSize']}"
 		},
 		"IoQueryKsrPersistentMemorySizeEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DRIVER_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'short', 'signed': false, 'label': 'UInt16'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DriverObject', 'PhysicalDeviceObject', 'PhysicalDeviceId', 'DataTag', 'DataVersion', 'BufferSize']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DRIVER_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'short', 'signed': false, 'label': 'UInt16'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DriverObject', 'PhysicalDeviceObject', 'PhysicalDeviceId', 'DataTag', 'DataVersion', 'BufferSize']}"
 		},
 		"IoQueryVolumeInformation": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FILE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'FS_INFORMATION_CLASS', 'ot': 'enum'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['FileObject', 'FsInformationClass', 'Length', 'FsInformation', 'ReturnedLength']}"
@@ -1774,10 +1774,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['PhysicalDeviceObject', 'Flags']}"
 		},
 		"IoReserveKsrPersistentMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DRIVER_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DriverObject', 'PhysicalDeviceObject', 'Size', 'Flags', 'DataHandle']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DRIVER_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DriverObject', 'PhysicalDeviceObject', 'Size', 'Flags', 'DataHandle']}"
 		},
 		"IoReserveKsrPersistentMemoryEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DRIVER_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'short', 'signed': false, 'label': 'UInt16'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DriverObject', 'PhysicalDeviceObject', 'PhysicalDeviceId', 'DataTag', 'DataVersion', 'Size', 'Flags', 'DataHandle']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DRIVER_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'short', 'signed': false, 'label': 'UInt16'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DriverObject', 'PhysicalDeviceObject', 'PhysicalDeviceId', 'DataTag', 'DataVersion', 'Size', 'Flags', 'DataHandle']}"
 		},
 		"IoRetrievePriorityInfo": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IRP', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FILE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'PETHREAD', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_PRIORITY_INFO', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Irp', 'FileObject', 'Thread', 'PriorityInfo']}"
@@ -1834,7 +1834,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IRP', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'IO_PRIORITY_HINT', 'ot': 'enum'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Irp', 'PriorityHint']}"
 		},
 		"IoSetIrpExtraCreateParameter": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IRP', 'ot': 'struct'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Irp', 'ExtraCreateParameter']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IRP', 'ot': 'struct'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Irp', 'ExtraCreateParameter']}"
 		},
 		"IoSetLinkShareAccess": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FILE_OBJECT', 'ot': 'struct'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'SHARE_ACCESS', 'ot': 'struct'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'LINK_SHARE_ACCESS', 'ot': 'struct'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['DesiredAccess', 'DesiredShareAccess', 'FileObject', 'ShareAccess', 'LinkShareAccess', 'IoShareAccessFlags']}"
@@ -2008,13 +2008,13 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['WnodeEventItem']}"
 		},
 		"IoWithinStackLimits": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'arg_names': ['RegionStart', 'RegionSize']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'arg_names': ['RegionStart', 'RegionSize']}"
 		},
 		"IoWriteErrorLogEntry": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['ElEntry']}"
 		},
 		"IoWriteKsrPersistentMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DataHandle', 'Buffer', 'Size']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DataHandle', 'Buffer', 'Size']}"
 		},
 		"IoWritePartitionTable": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DRIVE_LAYOUT_INFORMATION', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DeviceObject', 'SectorSize', 'SectorsPerTrack', 'NumberOfHeads', 'PartitionBuffer']}"
@@ -2047,13 +2047,13 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FAST_MUTEX', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['FastMutex']}"
 		},
 		"KeAcquireInStackQueuedSpinLock": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KLOCK_QUEUE_HANDLE', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['SpinLock', 'LockHandle']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KLOCK_QUEUE_HANDLE', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['SpinLock', 'LockHandle']}"
 		},
 		"KeAcquireInStackQueuedSpinLockAtDpcLevel": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KLOCK_QUEUE_HANDLE', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['SpinLock', 'LockHandle']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KLOCK_QUEUE_HANDLE', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['SpinLock', 'LockHandle']}"
 		},
 		"KeAcquireInStackQueuedSpinLockForDpc": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KLOCK_QUEUE_HANDLE', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['SpinLock', 'LockHandle']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KLOCK_QUEUE_HANDLE', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['SpinLock', 'LockHandle']}"
 		},
 		"KeAcquireInterruptSpinLock": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PKINTERRUPT', 'ot': 'ptr'}], 'returnty': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'arg_names': ['Interrupt']}"
@@ -2062,13 +2062,13 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'KSPIN_LOCK_QUEUE_NUMBER', 'ot': 'enum'}], 'returnty': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'arg_names': ['Number']}"
 		},
 		"KeAcquireSpinLockForDpc": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'arg_names': ['SpinLock']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'arg_names': ['SpinLock']}"
 		},
 		"KeAcquireSpinLockRaiseToSynch": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'arg_names': ['SpinLock']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'arg_names': ['SpinLock']}"
 		},
 		"KeAddTriageDumpDataBlock": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KTRIAGE_DUMP_DATA_ARRAY', 'ot': 'struct'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['KtriageDumpDataArray', 'Address', 'Size']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KTRIAGE_DUMP_DATA_ARRAY', 'ot': 'struct'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['KtriageDumpDataArray', 'Address', 'Size']}"
 		},
 		"KeAreAllApcsDisabled": {
 			"proto": "{'_t': 'func', 'args': [], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': []}"
@@ -2083,7 +2083,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'BUGCHECK_ERROR', 'ot': 'enum'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['BugCheckCode']}"
 		},
 		"KeBugCheckEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'BUGCHECK_ERROR', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['BugCheckCode', 'BugCheckParameter1', 'BugCheckParameter2', 'BugCheckParameter3', 'BugCheckParameter4']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'BUGCHECK_ERROR', 'ot': 'enum'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['BugCheckCode', 'BugCheckParameter1', 'BugCheckParameter2', 'BugCheckParameter3', 'BugCheckParameter4']}"
 		},
 		"KeCancelTimer": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KTIMER', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['param0']}"
@@ -2125,10 +2125,10 @@
 			"proto": "{'_t': 'func', 'args': [], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': []}"
 		},
 		"KeExpandKernelStackAndCallout": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': []}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Callout', 'Parameter', 'Size']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': []}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Callout', 'Parameter', 'Size']}"
 		},
 		"KeExpandKernelStackAndCalloutEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': []}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Callout', 'Parameter', 'Size', 'Wait', 'Context']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': []}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Callout', 'Parameter', 'Size', 'Wait', 'Context']}"
 		},
 		"KeFlushIoBuffers": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Mdl', 'ReadOperation', 'DmaOperation']}"
@@ -2182,7 +2182,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KSEMAPHORE', 'ot': 'struct'}, 'disp': 2}, {'_t': 'int', 'label': 'Int32'}, {'_t': 'int', 'label': 'Int32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Semaphore', 'Count', 'Limit']}"
 		},
 		"KeInitializeSpinLock": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['SpinLock']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['SpinLock']}"
 		},
 		"KeInitializeThreadedDpc": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KDPC', 'ot': 'struct'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': []}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Dpc', 'DeferredRoutine', 'DeferredContext']}"
@@ -2218,7 +2218,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['BaseAddress', 'Length']}"
 		},
 		"KeIpiGenericCall": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'arg_names': []}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'arg_names': ['BroadcastFunction', 'Context']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [], 'returnty': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'arg_names': []}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'arg_names': ['BroadcastFunction', 'Context']}"
 		},
 		"KeIsExecutingDpc": {
 			"proto": "{'_t': 'func', 'args': [], 'returnty': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'arg_names': []}"
@@ -2236,13 +2236,13 @@
 			"proto": "{'_t': 'func', 'args': [], 'returnty': {'_t': 'short', 'signed': false, 'label': 'UInt16'}, 'arg_names': []}"
 		},
 		"KeQueryActiveProcessorCount": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'arg_names': ['ActiveProcessors']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'arg_names': ['ActiveProcessors']}"
 		},
 		"KeQueryActiveProcessorCountEx": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'short', 'signed': false, 'label': 'UInt16'}], 'returnty': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'arg_names': ['GroupNumber']}"
 		},
 		"KeQueryActiveProcessors": {
-			"proto": "{'_t': 'func', 'args': [], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'arg_names': []}"
+			"proto": "{'_t': 'func', 'args': [], 'returnty': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'arg_names': []}"
 		},
 		"KeQueryAuxiliaryCounterFrequency": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'llong', 'signed': false, 'label': 'UInt64'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['AuxiliaryCounterFrequency']}"
@@ -2251,7 +2251,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KDPC_WATCHDOG_INFORMATION', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['WatchdogInformation']}"
 		},
 		"KeQueryGroupAffinity": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'short', 'signed': false, 'label': 'UInt16'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'arg_names': ['GroupNumber']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'short', 'signed': false, 'label': 'UInt16'}], 'returnty': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'arg_names': ['GroupNumber']}"
 		},
 		"KeQueryHardwareCounterConfiguration": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'HARDWARE_COUNTER', 'ot': 'struct'}, 'label': 'LPArray', 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['CounterArray', 'MaximumCount', 'Count']}"
@@ -2371,7 +2371,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KSEMAPHORE', 'ot': 'struct'}, 'disp': 0}, {'_t': 'int', 'label': 'Int32'}, {'_t': 'int', 'label': 'Int32'}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}], 'returnty': {'_t': 'int', 'label': 'Int32'}, 'arg_names': ['Semaphore', 'Increment', 'Adjustment', 'Wait']}"
 		},
 		"KeReleaseSpinLockForDpc": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'char', 'signed': false, 'label': 'Byte'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['SpinLock', 'OldIrql']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'char', 'signed': false, 'label': 'Byte'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['SpinLock', 'OldIrql']}"
 		},
 		"KeRemoveByKeyDeviceQueue": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KDEVICE_QUEUE', 'ot': 'struct'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KDEVICE_QUEUE_ENTRY', 'ot': 'struct'}}, 'arg_names': ['DeviceQueue', 'SortKey']}"
@@ -2407,7 +2407,7 @@
 			"proto": "{'_t': 'func', 'args': [], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': []}"
 		},
 		"KeRevertToUserAffinityThreadEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Affinity']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Affinity']}"
 		},
 		"KeRevertToUserGroupAffinityThread": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'GROUP_AFFINITY', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['PreviousAffinity']}"
@@ -2443,10 +2443,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PKTHREAD', 'ot': 'ptr'}, {'_t': 'int', 'label': 'Int32'}], 'returnty': {'_t': 'int', 'label': 'Int32'}, 'arg_names': ['Thread', 'Priority']}"
 		},
 		"KeSetSystemAffinityThread": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Affinity']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Affinity']}"
 		},
 		"KeSetSystemAffinityThreadEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'arg_names': ['Affinity']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'arg_names': ['Affinity']}"
 		},
 		"KeSetSystemGroupAffinityThread": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'GROUP_AFFINITY', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'GROUP_AFFINITY', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Affinity', 'PreviousAffinity']}"
@@ -2473,7 +2473,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PKINTERRUPT', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': []}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['Interrupt', 'SynchronizeRoutine', 'SynchronizeContext']}"
 		},
 		"KeTestSpinLock": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['SpinLock']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['SpinLock']}"
 		},
 		"KeTryToAcquireGuardedMutex": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'FAST_MUTEX', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['Mutex']}"
@@ -2482,7 +2482,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'KSPIN_LOCK_QUEUE_NUMBER', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'disp': 2}], 'returnty': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'arg_names': ['Number', 'OldIrql']}"
 		},
 		"KeTryToAcquireSpinLockAtDpcLevel": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['SpinLock']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['SpinLock']}"
 		},
 		"KeUnstackDetachProcess": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KAPC_STATE', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['ApcState']}"
@@ -2500,7 +2500,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['StartAddress', 'NumberOfBytes']}"
 		},
 		"MmAddVerifierSpecialThunks": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['EntryRoutine', 'ThunkBuffer', 'ThunkBufferSize']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['EntryRoutine', 'ThunkBuffer', 'ThunkBufferSize']}"
 		},
 		"MmAddVerifierThunks": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ThunkBuffer', 'ThunkBufferSize']}"
@@ -2509,43 +2509,43 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Mdl', 'NumberOfBytes']}"
 		},
 		"MmAllocateContiguousMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'llong', 'label': 'Int64'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['NumberOfBytes', 'HighestAcceptableAddress']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'llong', 'label': 'Int64'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['NumberOfBytes', 'HighestAcceptableAddress']}"
 		},
 		"MmAllocateContiguousMemoryEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 1}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['NumberOfBytes', 'LowestAcceptableAddress', 'HighestAcceptableAddress', 'BoundaryAddressMultiple', 'PreferredNode', 'Protect', 'PartitionObject', 'Tag', 'Flags', 'BaseAddress']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 1}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['NumberOfBytes', 'LowestAcceptableAddress', 'HighestAcceptableAddress', 'BoundaryAddressMultiple', 'PreferredNode', 'Protect', 'PartitionObject', 'Tag', 'Flags', 'BaseAddress']}"
 		},
 		"MmAllocateContiguousMemorySpecifyCache": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': '_ref', 'name': 'MEMORY_CACHING_TYPE', 'ot': 'enum'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['NumberOfBytes', 'LowestAcceptableAddress', 'HighestAcceptableAddress', 'BoundaryAddressMultiple', 'CacheType']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': '_ref', 'name': 'MEMORY_CACHING_TYPE', 'ot': 'enum'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['NumberOfBytes', 'LowestAcceptableAddress', 'HighestAcceptableAddress', 'BoundaryAddressMultiple', 'CacheType']}"
 		},
 		"MmAllocateContiguousMemorySpecifyCacheNode": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': '_ref', 'name': 'MEMORY_CACHING_TYPE', 'ot': 'enum'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['NumberOfBytes', 'LowestAcceptableAddress', 'HighestAcceptableAddress', 'BoundaryAddressMultiple', 'CacheType', 'PreferredNode']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': '_ref', 'name': 'MEMORY_CACHING_TYPE', 'ot': 'enum'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['NumberOfBytes', 'LowestAcceptableAddress', 'HighestAcceptableAddress', 'BoundaryAddressMultiple', 'CacheType', 'PreferredNode']}"
 		},
 		"MmAllocateContiguousNodeMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['NumberOfBytes', 'LowestAcceptableAddress', 'HighestAcceptableAddress', 'BoundaryAddressMultiple', 'Protect', 'PreferredNode']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['NumberOfBytes', 'LowestAcceptableAddress', 'HighestAcceptableAddress', 'BoundaryAddressMultiple', 'Protect', 'PreferredNode']}"
 		},
 		"MmAllocateMappingAddress": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['NumberOfBytes', 'PoolTag']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['NumberOfBytes', 'PoolTag']}"
 		},
 		"MmAllocateMappingAddressEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['NumberOfBytes', 'PoolTag', 'Flags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['NumberOfBytes', 'PoolTag', 'Flags']}"
 		},
 		"MmAllocateMdlForIoSpace": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MM_PHYSICAL_ADDRESS_LIST', 'ot': 'struct'}, 'label': 'LPArray', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['PhysicalAddressList', 'NumberOfEntries', 'NewMdl']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MM_PHYSICAL_ADDRESS_LIST', 'ot': 'struct'}, 'label': 'LPArray', 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['PhysicalAddressList', 'NumberOfEntries', 'NewMdl']}"
 		},
 		"MmAllocateNodePagesForMdlEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'MEMORY_CACHING_TYPE', 'ot': 'enum'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}}, 'arg_names': ['LowAddress', 'HighAddress', 'SkipBytes', 'TotalBytes', 'CacheType', 'IdealNode', 'Flags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': '_ref', 'name': 'MEMORY_CACHING_TYPE', 'ot': 'enum'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}}, 'arg_names': ['LowAddress', 'HighAddress', 'SkipBytes', 'TotalBytes', 'CacheType', 'IdealNode', 'Flags']}"
 		},
 		"MmAllocateNonCachedMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['NumberOfBytes']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['NumberOfBytes']}"
 		},
 		"MmAllocatePagesForMdl": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}}, 'arg_names': ['LowAddress', 'HighAddress', 'SkipBytes', 'TotalBytes']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}}, 'arg_names': ['LowAddress', 'HighAddress', 'SkipBytes', 'TotalBytes']}"
 		},
 		"MmAllocatePagesForMdlEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'MEMORY_CACHING_TYPE', 'ot': 'enum'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}}, 'arg_names': ['LowAddress', 'HighAddress', 'SkipBytes', 'TotalBytes', 'CacheType', 'Flags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': '_ref', 'name': 'MEMORY_CACHING_TYPE', 'ot': 'enum'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}}, 'arg_names': ['LowAddress', 'HighAddress', 'SkipBytes', 'TotalBytes', 'CacheType', 'Flags']}"
 		},
 		"MmAllocatePartitionNodePagesForMdlEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'MEMORY_CACHING_TYPE', 'ot': 'enum'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}}, 'arg_names': ['LowAddress', 'HighAddress', 'SkipBytes', 'TotalBytes', 'CacheType', 'IdealNode', 'Flags', 'PartitionObject']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': '_ref', 'name': 'MEMORY_CACHING_TYPE', 'ot': 'enum'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}}, 'arg_names': ['LowAddress', 'HighAddress', 'SkipBytes', 'TotalBytes', 'CacheType', 'IdealNode', 'Flags', 'PartitionObject']}"
 		},
 		"MmAreMdlPagesCached": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'arg_names': ['MemoryDescriptorList']}"
@@ -2557,10 +2557,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'SECTION_OBJECT_POINTERS', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['SectionPointer', 'NewFileSize']}"
 		},
 		"MmCopyMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': '_ref', 'name': 'MM_COPY_ADDRESS', 'ot': 'struct'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['TargetAddress', 'SourceAddress', 'NumberOfBytes', 'Flags', 'NumberOfBytesTransferred']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': '_ref', 'name': 'MM_COPY_ADDRESS', 'ot': 'struct'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['TargetAddress', 'SourceAddress', 'NumberOfBytes', 'Flags', 'NumberOfBytesTransferred']}"
 		},
 		"MmCreateMdl": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}}, 'arg_names': ['MemoryDescriptorList', 'Base', 'Length']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}}, 'arg_names': ['MemoryDescriptorList', 'Base', 'Length']}"
 		},
 		"MmCreateMirror": {
 			"proto": "{'_t': 'func', 'args': [], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': []}"
@@ -2581,13 +2581,13 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['BaseAddress']}"
 		},
 		"MmFreeContiguousMemorySpecifyCache": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'MEMORY_CACHING_TYPE', 'ot': 'enum'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['BaseAddress', 'NumberOfBytes', 'CacheType']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': '_ref', 'name': 'MEMORY_CACHING_TYPE', 'ot': 'enum'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['BaseAddress', 'NumberOfBytes', 'CacheType']}"
 		},
 		"MmFreeMappingAddress": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['BaseAddress', 'PoolTag']}"
 		},
 		"MmFreeNonCachedMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['BaseAddress', 'NumberOfBytes']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['BaseAddress', 'NumberOfBytes']}"
 		},
 		"MmFreePagesFromMdl": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['MemoryDescriptorList']}"
@@ -2638,7 +2638,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'SECTION_OBJECT_POINTERS', 'ot': 'struct'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['FsSectionPointer', 'Flags', 'SectionIsActive']}"
 		},
 		"MmIsIoSpaceActive": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'label': 'Int64'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'arg_names': ['StartAddress', 'NumberOfBytes']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'label': 'Int64'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'arg_names': ['StartAddress', 'NumberOfBytes']}"
 		},
 		"MmIsNonPagedSystemAddressValid": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['VirtualAddress']}"
@@ -2659,10 +2659,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['ImageSectionHandle']}"
 		},
 		"MmMapIoSpace": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'label': 'Int64'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'MEMORY_CACHING_TYPE', 'ot': 'enum'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['PhysicalAddress', 'NumberOfBytes', 'CacheType']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'label': 'Int64'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': '_ref', 'name': 'MEMORY_CACHING_TYPE', 'ot': 'enum'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['PhysicalAddress', 'NumberOfBytes', 'CacheType']}"
 		},
 		"MmMapIoSpaceEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'label': 'Int64'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['PhysicalAddress', 'NumberOfBytes', 'Protect']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'label': 'Int64'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['PhysicalAddress', 'NumberOfBytes', 'Protect']}"
 		},
 		"MmMapLockedPages": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}, 'disp': 0}, {'_t': 'char', 'signed': true, 'label': 'SByte'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['MemoryDescriptorList', 'AccessMode']}"
@@ -2680,22 +2680,22 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Va', 'PageTotal', 'MemoryDumpMdl', 'Flags']}"
 		},
 		"MmMapUserAddressesToPage": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['BaseAddress', 'NumberOfBytes', 'PageAddress']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['BaseAddress', 'NumberOfBytes', 'PageAddress']}"
 		},
 		"MmMapVideoDisplay": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'label': 'Int64'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'MEMORY_CACHING_TYPE', 'ot': 'enum'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['PhysicalAddress', 'NumberOfBytes', 'CacheType']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'label': 'Int64'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': '_ref', 'name': 'MEMORY_CACHING_TYPE', 'ot': 'enum'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['PhysicalAddress', 'NumberOfBytes', 'CacheType']}"
 		},
 		"MmMapViewInSessionSpace": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Section', 'MappedBase', 'ViewSize']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Section', 'MappedBase', 'ViewSize']}"
 		},
 		"MmMapViewInSessionSpaceEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Section', 'MappedBase', 'ViewSize', 'SectionOffset', 'Flags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 0}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Section', 'MappedBase', 'ViewSize', 'SectionOffset', 'Flags']}"
 		},
 		"MmMapViewInSystemSpace": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Section', 'MappedBase', 'ViewSize']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Section', 'MappedBase', 'ViewSize']}"
 		},
 		"MmMapViewInSystemSpaceEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Section', 'MappedBase', 'ViewSize', 'SectionOffset', 'Flags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 0}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Section', 'MappedBase', 'ViewSize', 'SectionOffset', 'Flags']}"
 		},
 		"MmMdlPageContentsState": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}, 'disp': 0}, {'_t': '_ref', 'name': 'MM_MDL_PAGE_CONTENTS_STATE', 'ot': 'enum'}], 'returnty': {'_t': '_ref', 'name': 'MM_MDL_PAGE_CONTENTS_STATE', 'ot': 'enum'}, 'arg_names': ['MemoryDescriptorList', 'State']}"
@@ -2719,7 +2719,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'union', 'members': {'Buffer': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'Alignment': {'_t': 'llong', 'signed': false, 'label': 'UInt64'}}, 'name': '<anon>'}, 'disp': 1}, {'_t': 'char', 'signed': true, 'label': 'SByte'}, {'_t': '_ref', 'name': 'LOCK_OPERATION', 'ot': 'enum'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['MemoryDescriptorList', 'SegmentArray', 'AccessMode', 'Operation']}"
 		},
 		"MmProtectDriverSection": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['AddressWithinSection', 'Size', 'Flags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['AddressWithinSection', 'Size', 'Flags']}"
 		},
 		"MmProtectMdlSystemAddress": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['MemoryDescriptorList', 'NewProtect']}"
@@ -2734,22 +2734,22 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['AddressWithinSection']}"
 		},
 		"MmRotatePhysicalView": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'MM_ROTATE_DIRECTION', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DestinationMdl', 'SourceMdl', 'Context']}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['VirtualAddress', 'NumberOfBytes', 'NewMdl', 'Direction', 'CopyFunction', 'Context']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'MM_ROTATE_DIRECTION', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DestinationMdl', 'SourceMdl', 'Context']}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['VirtualAddress', 'NumberOfBytes', 'NewMdl', 'Direction', 'CopyFunction', 'Context']}"
 		},
 		"MmSecureVirtualMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, 'arg_names': ['Address', 'Size', 'ProbeMode']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, 'arg_names': ['Address', 'Size', 'ProbeMode']}"
 		},
 		"MmSecureVirtualMemoryEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, 'arg_names': ['Address', 'Size', 'ProbeMode', 'Flags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, 'arg_names': ['Address', 'Size', 'ProbeMode', 'Flags']}"
 		},
 		"MmSetAddressRangeModified": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['Address', 'Length']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['Address', 'Length']}"
 		},
 		"MmSetPermanentCacheAttribute": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'llong', 'label': 'Int64'}, {'_t': 'llong', 'label': 'Int64'}, {'_t': '_ref', 'name': 'MEMORY_CACHING_TYPE', 'ot': 'enum'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['StartAddress', 'NumberOfBytes', 'CacheType', 'Flags']}"
 		},
 		"MmSizeOfMdl": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'arg_names': ['Base', 'Length']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'arg_names': ['Base', 'Length']}"
 		},
 		"MmUnlockPagableImageSection": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['ImageSectionHandle']}"
@@ -2758,7 +2758,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['MemoryDescriptorList']}"
 		},
 		"MmUnmapIoSpace": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['BaseAddress', 'NumberOfBytes']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['BaseAddress', 'NumberOfBytes']}"
 		},
 		"MmUnmapLockedPages": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['BaseAddress', 'MemoryDescriptorList']}"
@@ -2767,7 +2767,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MDL', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['BaseAddress', 'PoolTag', 'MemoryDescriptorList']}"
 		},
 		"MmUnmapVideoDisplay": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['BaseAddress', 'NumberOfBytes']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['BaseAddress', 'NumberOfBytes']}"
 		},
 		"MmUnmapViewInSessionSpace": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['MappedBase']}"
@@ -2797,7 +2797,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'TOKEN_PRIVILEGES', 'ot': 'struct'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'TOKEN_PRIVILEGES', 'ot': 'struct'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['TokenHandle', 'DisableAllPrivileges', 'NewState', 'BufferLength', 'PreviousState', 'ReturnLength']}"
 		},
 		"NtAllocateVirtualMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'BaseAddress', 'ZeroBits', 'RegionSize', 'AllocationType', 'Protect']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 0}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'BaseAddress', 'ZeroBits', 'RegionSize', 'AllocationType', 'Protect']}"
 		},
 		"NtCancelIoFileEx": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_STATUS_BLOCK', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_STATUS_BLOCK', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['FileHandle', 'IoRequestToCancel', 'IoStatusBlock']}"
@@ -2857,13 +2857,13 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_STATUS_BLOCK', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['FileHandle', 'Flags', 'Parameters', 'ParametersSize', 'IoStatusBlock']}"
 		},
 		"NtFreeVirtualMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'BaseAddress', 'RegionSize', 'FreeType']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'BaseAddress', 'RegionSize', 'FreeType']}"
 		},
 		"NtFsControlFile": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_STATUS_BLOCK', 'ot': 'struct'}}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['ApcContext', 'IoStatusBlock', 'Reserved']}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_STATUS_BLOCK', 'ot': 'struct'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['FileHandle', 'Event', 'ApcRoutine', 'ApcContext', 'IoStatusBlock', 'FsControlCode', 'InputBuffer', 'InputBufferLength', 'OutputBuffer', 'OutputBufferLength']}"
 		},
 		"NtGetNotificationResourceManager": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'TRANSACTION_NOTIFICATION', 'ot': 'struct'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ResourceManagerHandle', 'TransactionNotification', 'NotificationLength', 'Timeout', 'ReturnLength', 'Asynchronous', 'AsynchronousContext']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'TRANSACTION_NOTIFICATION', 'ot': 'struct'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ResourceManagerHandle', 'TransactionNotification', 'NotificationLength', 'Timeout', 'ReturnLength', 'Asynchronous', 'AsynchronousContext']}"
 		},
 		"NtImpersonateAnonymousToken": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ThreadHandle']}"
@@ -2998,7 +2998,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['MaximumTime', 'MinimumTime', 'CurrentTime']}"
 		},
 		"NtQueryVirtualMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': '_ref', 'name': 'MEMORY_INFORMATION_CLASS', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'BaseAddress', 'MemoryInformationClass', 'MemoryInformation', 'MemoryInformationLength', 'ReturnLength']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': '_ref', 'name': 'MEMORY_INFORMATION_CLASS', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'BaseAddress', 'MemoryInformationClass', 'MemoryInformation', 'MemoryInformationLength', 'ReturnLength']}"
 		},
 		"NtQueryVolumeInformationFile": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_STATUS_BLOCK', 'ot': 'struct'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'FS_INFORMATION_CLASS', 'ot': 'enum'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['FileHandle', 'IoStatusBlock', 'FsInformation', 'Length', 'FsInformationClass']}"
@@ -3067,7 +3067,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'TRANSACTIONMANAGER_INFORMATION_CLASS', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['TmHandle', 'TransactionManagerInformationClass', 'TransactionManagerInformation', 'TransactionManagerInformationLength']}"
 		},
 		"NtSetInformationVirtualMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'VIRTUAL_MEMORY_INFORMATION_CLASS', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MEMORY_RANGE_ENTRY', 'ot': 'struct'}, 'label': 'LPArray', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'VmInformationClass', 'NumberOfEntries', 'VirtualAddresses', 'VmInformation', 'VmInformationLength']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'VIRTUAL_MEMORY_INFORMATION_CLASS', 'ot': 'enum'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MEMORY_RANGE_ENTRY', 'ot': 'struct'}, 'label': 'LPArray', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'VmInformationClass', 'NumberOfEntries', 'VirtualAddresses', 'VmInformation', 'VmInformationLength']}"
 		},
 		"NtSetQuotaInformationFile": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_STATUS_BLOCK', 'ot': 'struct'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['FileHandle', 'IoStatusBlock', 'Buffer', 'Length']}"
@@ -3154,16 +3154,16 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['RegistrationHandle']}"
 		},
 		"ObfDereferenceObject": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr'}, 'arg_names': ['Object']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, 'arg_names': ['Object']}"
 		},
 		"ObfDereferenceObjectWithTag": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr'}, 'arg_names': ['Object', 'Tag']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, 'arg_names': ['Object', 'Tag']}"
 		},
 		"ObfReferenceObject": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr'}, 'arg_names': ['Object']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, 'arg_names': ['Object']}"
 		},
 		"ObfReferenceObjectWithTag": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr'}, 'arg_names': ['Object', 'Tag']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, 'arg_names': ['Object', 'Tag']}"
 		},
 		"PcwAddInstance": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PPCW_BUFFER', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'PCW_DATA', 'ot': 'struct'}, 'label': 'LPArray', 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Buffer', 'Name', 'Id', 'Count', 'Data']}"
@@ -3241,7 +3241,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'DEVICE_OBJECT', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Pdo']}"
 		},
 		"PoFxPowerControl": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'POHANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'Guid', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Handle', 'PowerControlCode', 'InBuffer', 'InBufferSize', 'OutBuffer', 'OutBufferSize', 'BytesReturned']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'POHANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'Guid', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Handle', 'PowerControlCode', 'InBuffer', 'InBufferSize', 'OutBuffer', 'OutBufferSize', 'BytesReturned']}"
 		},
 		"PoFxPowerOnCrashdumpDevice": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'POHANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Handle', 'Context']}"
@@ -3313,7 +3313,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['IdlePointer']}"
 		},
 		"PoSetHiberRange": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['MemoryMap', 'Flags', 'Address', 'Length', 'Tag']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['MemoryMap', 'Flags', 'Address', 'Length', 'Tag']}"
 		},
 		"PoSetPowerRequest": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}, {'_t': '_ref', 'name': 'POWER_REQUEST_TYPE', 'ot': 'enum'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['PowerRequest', 'Type']}"
@@ -3349,16 +3349,16 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['StateHandle']}"
 		},
 		"ProbeForRead": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Address', 'Length', 'Alignment']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Address', 'Length', 'Alignment']}"
 		},
 		"ProbeForWrite": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Address', 'Length', 'Alignment']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 0}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Address', 'Length', 'Alignment']}"
 		},
 		"PsAcquireSiloHardReference": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PESILO', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Silo']}"
 		},
 		"PsAllocSiloContextSlot": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Reserved', 'ReturnedContextSlot']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Reserved', 'ReturnedContextSlot']}"
 		},
 		"PsAllocateAffinityToken": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'PAFFINITY_TOKEN', 'ot': 'ptr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['AffinityToken']}"
@@ -3370,10 +3370,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PESILO', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'PESILO', 'ot': 'ptr'}, 'arg_names': ['Silo']}"
 		},
 		"PsChargePoolQuota": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PEPROCESS', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Process', 'PoolType', 'Amount']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PEPROCESS', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Process', 'PoolType', 'Amount']}"
 		},
 		"PsChargeProcessPoolQuota": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PEPROCESS', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Process', 'PoolType', 'Amount']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PEPROCESS', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Process', 'PoolType', 'Amount']}"
 		},
 		"PsCreateSiloContext": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PESILO', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['SiloContext']}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Silo', 'Size', 'PoolType', 'ContextCleanupCallback', 'ReturnedSiloContext']}"
@@ -3481,7 +3481,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PETHREAD', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, 'arg_names': ['Thread']}"
 		},
 		"PsGetThreadProperty": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PETHREAD', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['Thread', 'Key', 'Flags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PETHREAD', 'ot': 'ptr'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['Thread', 'Key', 'Flags']}"
 		},
 		"PsGetThreadServerSilo": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PETHREAD', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'PESILO', 'ot': 'ptr'}, 'arg_names': ['Thread']}"
@@ -3559,7 +3559,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PETHREAD', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'SE_IMPERSONATION_STATE', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Thread', 'ImpersonationState']}"
 		},
 		"PsReturnPoolQuota": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PEPROCESS', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Process', 'PoolType', 'Amount']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PEPROCESS', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'POOL_TYPE', 'ot': 'enum'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Process', 'PoolType', 'Amount']}"
 		},
 		"PsRevertToSelf": {
 			"proto": "{'_t': 'func', 'args': [], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': []}"
@@ -3589,7 +3589,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}}, {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IMAGE_INFO', 'ot': 'struct'}}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['FullImageName', 'ProcessId', 'ImageInfo']}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['NotifyRoutine']}"
 		},
 		"PsSetLoadImageNotifyRoutineEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}}, {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IMAGE_INFO', 'ot': 'struct'}}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['FullImageName', 'ProcessId', 'ImageInfo']}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['NotifyRoutine', 'Flags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}}, {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IMAGE_INFO', 'ot': 'struct'}}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['FullImageName', 'ProcessId', 'ImageInfo']}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['NotifyRoutine', 'Flags']}"
 		},
 		"PsSetSystemMultipleGroupAffinityThread": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'GROUP_AFFINITY', 'ot': 'struct'}, 'label': 'LPArray', 'disp': 1}, {'_t': 'short', 'signed': false, 'label': 'UInt16'}, {'_t': '_ref', 'name': 'PAFFINITY_TOKEN', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['GroupAffinities', 'GroupCount', 'AffinityToken']}"
@@ -3631,7 +3631,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'SID_IDENTIFIER_AUTHORITY', 'ot': 'struct'}, 'disp': 1}, {'_t': 'char', 'signed': false, 'label': 'Byte'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'label': 'LPArray', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'PSID', 'ot': 'ptr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['IdentifierAuthority', 'SubAuthorityCount', 'SubAuthorities', 'Sid']}"
 		},
 		"RtlAllocateHeap": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['HeapHandle', 'Flags', 'Size']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['HeapHandle', 'Flags', 'Size']}"
 		},
 		"RtlAppendStringToString": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'STRING', 'ot': 'struct'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'STRING', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Destination', 'Source']}"
@@ -3673,7 +3673,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': 'int', 'label': 'Int32'}, 'arg_names': ['Altitude1', 'Altitude2']}"
 		},
 		"RtlCompareMemoryUlong": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'arg_names': ['Source', 'Length', 'Pattern']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'arg_names': ['Source', 'Length', 'Pattern']}"
 		},
 		"RtlCompareString": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}], 'returnty': {'_t': 'int', 'label': 'Int32'}, 'arg_names': ['String1', 'String2', 'CaseInSensitive']}"
@@ -3682,7 +3682,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}], 'returnty': {'_t': 'int', 'label': 'Int32'}, 'arg_names': ['String1', 'String2', 'CaseInSensitive']}"
 		},
 		"RtlCompareUnicodeStrings": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'short', 'signed': false, 'label': 'UInt16'}, 'label': 'LPArray', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'short', 'signed': false, 'label': 'UInt16'}, 'label': 'LPArray', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}], 'returnty': {'_t': 'int', 'label': 'Int32'}, 'arg_names': ['String1', 'String1Length', 'String2', 'String2Length', 'CaseInSensitive']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'short', 'signed': false, 'label': 'UInt16'}, 'label': 'LPArray', 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': 'short', 'signed': false, 'label': 'UInt16'}, 'label': 'LPArray', 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}], 'returnty': {'_t': 'int', 'label': 'Int32'}, 'arg_names': ['String1', 'String1Length', 'String2', 'String2Length', 'CaseInSensitive']}"
 		},
 		"RtlCompressBuffer": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'short', 'signed': false, 'label': 'UInt16'}, {'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['CompressionFormatAndEngine', 'UncompressedBuffer', 'UncompressedBufferSize', 'CompressedBuffer', 'CompressedBufferSize', 'UncompressedChunkSize', 'FinalCompressedSize', 'WorkSpace']}"
@@ -3718,7 +3718,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_DYNAMIC_HASH_TABLE', 'ot': 'struct'}}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['HashTable', 'InitialSize', 'Shift', 'Flags']}"
 		},
 		"RtlCreateHeap": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_HEAP_PARAMETERS', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['Flags', 'HeapBase', 'ReserveSize', 'CommitSize', 'Lock', 'Parameters']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_HEAP_PARAMETERS', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['Flags', 'HeapBase', 'ReserveSize', 'CommitSize', 'Lock', 'Parameters']}"
 		},
 		"RtlCreateRegistryKey": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['RelativeTo', 'Path']}"
@@ -4021,7 +4021,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_AVL_TABLE', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': '_ref', 'name': 'TABLE_SEARCH_RESULT', 'ot': 'enum'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['Table', 'Buffer', 'BufferSize', 'NewElement', 'NodeOrParent', 'SearchResult']}"
 		},
 		"RtlInsertEntryHashTable": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_DYNAMIC_HASH_TABLE', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_DYNAMIC_HASH_TABLE_ENTRY', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_DYNAMIC_HASH_TABLE_CONTEXT', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['HashTable', 'Entry', 'Signature', 'Context']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_DYNAMIC_HASH_TABLE', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_DYNAMIC_HASH_TABLE_ENTRY', 'ot': 'struct'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_DYNAMIC_HASH_TABLE_CONTEXT', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['HashTable', 'Entry', 'Signature', 'Context']}"
 		},
 		"RtlInsertUnicodePrefix": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_PREFIX_TABLE', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_PREFIX_TABLE_ENTRY', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['PrefixTable', 'Prefix', 'PrefixTableEntry']}"
@@ -4111,7 +4111,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_AVL_TABLE', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'TABLE_SEARCH_RESULT', 'ot': 'enum'}, 'disp': 2}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['Table', 'Buffer', 'NodeOrParent', 'SearchResult']}"
 		},
 		"RtlLookupEntryHashTable": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_DYNAMIC_HASH_TABLE', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_DYNAMIC_HASH_TABLE_CONTEXT', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_DYNAMIC_HASH_TABLE_ENTRY', 'ot': 'struct'}}, 'arg_names': ['HashTable', 'Signature', 'Context']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_DYNAMIC_HASH_TABLE', 'ot': 'struct'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_DYNAMIC_HASH_TABLE_CONTEXT', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_DYNAMIC_HASH_TABLE_ENTRY', 'ot': 'struct'}}, 'arg_names': ['HashTable', 'Signature', 'Context']}"
 		},
 		"RtlLookupFirstMatchingElementGenericTableAvl": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_AVL_TABLE', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'arg_names': ['Table', 'Buffer', 'RestartKey']}"
@@ -4156,7 +4156,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'RTL_BITMAP', 'ot': 'struct'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'arg_names': ['BitMapHeader', 'StartingIndex', 'Length']}"
 		},
 		"RtlNumberOfSetBitsUlongPtr": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'arg_names': ['Target']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'arg_names': ['Target']}"
 		},
 		"RtlOemStringToCountedUnicodeString": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DestinationString', 'SourceString', 'AllocateDestinationString']}"
@@ -4168,7 +4168,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}, {'_t': '_ref', 'name': 'PSTR', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['UnicodeString', 'MaxBytesInUnicodeString', 'BytesInUnicodeString', 'OemString', 'BytesInOemString']}"
 		},
 		"RtlPrefetchMemoryNonTemporal": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Source', 'Length']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Source', 'Length']}"
 		},
 		"RtlPrefixString": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['String1', 'String2', 'CaseInSensitive']}"
@@ -4177,10 +4177,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['String1', 'String2', 'CaseInSensitive']}"
 		},
 		"RtlQueryPackageIdentity": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['TokenObject', 'PackageFullName', 'PackageSize', 'AppId', 'AppIdSize', 'Packaged']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['TokenObject', 'PackageFullName', 'PackageSize', 'AppId', 'AppIdSize', 'Packaged']}"
 		},
 		"RtlQueryPackageIdentityEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'Guid', 'ot': 'struct'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'llong', 'signed': false, 'label': 'UInt64'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['TokenObject', 'PackageFullName', 'PackageSize', 'AppId', 'AppIdSize', 'DynamicId', 'Flags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'Guid', 'ot': 'struct'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'llong', 'signed': false, 'label': 'UInt64'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['TokenObject', 'PackageFullName', 'PackageSize', 'AppId', 'AppIdSize', 'DynamicId', 'Flags']}"
 		},
 		"RtlQueryProcessPlaceholderCompatibilityMode": {
 			"proto": "{'_t': 'func', 'args': [], 'returnty': {'_t': '_ref', 'name': 'CHAR', 'ot': 'char'}, 'arg_names': []}"
@@ -4633,7 +4633,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KTRANSACTION', 'ot': 'ptr'}, 'disp': 1}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Transaction', 'Wait']}"
 		},
 		"TmCreateEnlistment": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, 'disp': 2}, {'_t': 'char', 'signed': true, 'label': 'SByte'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'OBJECT_ATTRIBUTES', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KTRANSACTION', 'ot': 'ptr'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['EnlistmentHandle', 'PreviousMode', 'DesiredAccess', 'ObjectAttributes', 'ResourceManager', 'Transaction', 'CreateOptions', 'NotificationMask', 'EnlistmentKey']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, 'disp': 2}, {'_t': 'char', 'signed': true, 'label': 'SByte'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'OBJECT_ATTRIBUTES', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KTRANSACTION', 'ot': 'ptr'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['EnlistmentHandle', 'PreviousMode', 'DesiredAccess', 'ObjectAttributes', 'ResourceManager', 'Transaction', 'CreateOptions', 'NotificationMask', 'EnlistmentKey']}"
 		},
 		"TmDereferenceEnlistmentKey": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KENLISTMENT', 'ot': 'ptr'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Enlistment', 'LastReference']}"
@@ -4645,7 +4645,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KTRANSACTION', 'ot': 'ptr'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'Guid', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['Transaction', 'TransactionId']}"
 		},
 		"TmInitializeTransactionManager": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'Guid', 'ot': 'struct'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['TransactionManager', 'LogFileName', 'TmId', 'CreateOptions']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'Guid', 'ot': 'struct'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['TransactionManager', 'LogFileName', 'TmId', 'CreateOptions']}"
 		},
 		"TmIsTransactionActive": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'KTRANSACTION', 'ot': 'ptr'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'arg_names': ['Transaction']}"
@@ -4786,10 +4786,10 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'LUID', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Luid']}"
 		},
 		"ZwAllocateVirtualMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'BaseAddress', 'ZeroBits', 'RegionSize', 'AllocationType', 'Protect']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 0}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'BaseAddress', 'ZeroBits', 'RegionSize', 'AllocationType', 'Protect']}"
 		},
 		"ZwAllocateVirtualMemoryEx": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MEM_EXTENDED_PARAMETER', 'ot': 'struct'}, 'label': 'LPArray', 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'BaseAddress', 'RegionSize', 'AllocationType', 'PageProtection', 'ExtendedParameters', 'ExtendedParameterCount']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MEM_EXTENDED_PARAMETER', 'ot': 'struct'}, 'label': 'LPArray', 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'BaseAddress', 'RegionSize', 'AllocationType', 'PageProtection', 'ExtendedParameters', 'ExtendedParameterCount']}"
 		},
 		"ZwCancelTimer": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['TimerHandle', 'CurrentState']}"
@@ -4885,16 +4885,16 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['KeyHandle']}"
 		},
 		"ZwFlushVirtualMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_STATUS_BLOCK', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'BaseAddress', 'RegionSize', 'IoStatus']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_STATUS_BLOCK', 'ot': 'struct'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'BaseAddress', 'RegionSize', 'IoStatus']}"
 		},
 		"ZwFreeVirtualMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'BaseAddress', 'RegionSize', 'FreeType']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'BaseAddress', 'RegionSize', 'FreeType']}"
 		},
 		"ZwFsControlFile": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_STATUS_BLOCK', 'ot': 'struct'}}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['ApcContext', 'IoStatusBlock', 'Reserved']}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_STATUS_BLOCK', 'ot': 'struct'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['FileHandle', 'Event', 'ApcRoutine', 'ApcContext', 'IoStatusBlock', 'FsControlCode', 'InputBuffer', 'InputBufferLength', 'OutputBuffer', 'OutputBufferLength']}"
 		},
 		"ZwGetNotificationResourceManager": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'TRANSACTION_NOTIFICATION', 'ot': 'struct'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ResourceManagerHandle', 'TransactionNotification', 'NotificationLength', 'Timeout', 'ReturnLength', 'Asynchronous', 'AsynchronousContext']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'TRANSACTION_NOTIFICATION', 'ot': 'struct'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ResourceManagerHandle', 'TransactionNotification', 'NotificationLength', 'Timeout', 'ReturnLength', 'Asynchronous', 'AsynchronousContext']}"
 		},
 		"ZwLoadDriver": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['DriverServiceName']}"
@@ -4906,7 +4906,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['Handle']}"
 		},
 		"ZwMapViewOfSection": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': '_ref', 'name': 'SECTION_INHERIT', 'ot': 'enum'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['SectionHandle', 'ProcessHandle', 'BaseAddress', 'ZeroBits', 'CommitSize', 'SectionOffset', 'ViewSize', 'InheritDisposition', 'AllocationType', 'Win32Protect']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, 'disp': 2}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': 'llong', 'label': 'Int64'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 0}, {'_t': '_ref', 'name': 'SECTION_INHERIT', 'ot': 'enum'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['SectionHandle', 'ProcessHandle', 'BaseAddress', 'ZeroBits', 'CommitSize', 'SectionOffset', 'ViewSize', 'InheritDisposition', 'AllocationType', 'Win32Protect']}"
 		},
 		"ZwNotifyChangeKey": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_STATUS_BLOCK', 'ot': 'struct'}}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['ApcContext', 'IoStatusBlock', 'Reserved']}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_STATUS_BLOCK', 'ot': 'struct'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'BOOLEAN', 'ot': 'char'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['KeyHandle', 'Event', 'ApcRoutine', 'ApcContext', 'IoStatusBlock', 'CompletionFilter', 'WatchTree', 'Buffer', 'BufferSize', 'Asynchronous']}"
@@ -5029,7 +5029,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'UNICODE_STRING', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'KEY_VALUE_INFORMATION_CLASS', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['KeyHandle', 'ValueName', 'KeyValueInformationClass', 'KeyValueInformation', 'Length', 'ResultLength']}"
 		},
 		"ZwQueryVirtualMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': '_ref', 'name': 'MEMORY_INFORMATION_CLASS', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'BaseAddress', 'MemoryInformationClass', 'MemoryInformation', 'MemoryInformationLength', 'ReturnLength']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': '_ref', 'name': 'MEMORY_INFORMATION_CLASS', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, 'disp': 2}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'BaseAddress', 'MemoryInformationClass', 'MemoryInformation', 'MemoryInformationLength', 'ReturnLength']}"
 		},
 		"ZwQueryVolumeInformationFile": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_STATUS_BLOCK', 'ot': 'struct'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'FS_INFORMATION_CLASS', 'ot': 'enum'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['FileHandle', 'IoStatusBlock', 'FsInformation', 'Length', 'FsInformationClass']}"
@@ -5104,7 +5104,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'TRANSACTIONMANAGER_INFORMATION_CLASS', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['TmHandle', 'TransactionManagerInformationClass', 'TransactionManagerInformation', 'TransactionManagerInformationLength']}"
 		},
 		"ZwSetInformationVirtualMemory": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'VIRTUAL_MEMORY_INFORMATION_CLASS', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MEMORY_RANGE_ENTRY', 'ot': 'struct'}, 'label': 'LPArray', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'VmInformationClass', 'NumberOfEntries', 'VirtualAddresses', 'VmInformation', 'VmInformationLength']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'VIRTUAL_MEMORY_INFORMATION_CLASS', 'ot': 'enum'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'MEMORY_RANGE_ENTRY', 'ot': 'struct'}, 'label': 'LPArray', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['ProcessHandle', 'VmInformationClass', 'NumberOfEntries', 'VirtualAddresses', 'VmInformation', 'VmInformationLength']}"
 		},
 		"ZwSetQuotaInformationFile": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'IO_STATUS_BLOCK', 'ot': 'struct'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': 'bot', 'label': 'Void'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'NTSTATUS', 'ot': 'int'}, 'arg_names': ['FileHandle', 'IoStatusBlock', 'Buffer', 'Length']}"

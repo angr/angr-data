@@ -12,37 +12,37 @@
 	},
 	"functions": {
 		"CryptCATAdminAcquireContext": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'Guid', 'ot': 'struct'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['phCatAdmin', 'pgSubsystem', 'dwFlags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'Guid', 'ot': 'struct'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['phCatAdmin', 'pgSubsystem', 'dwFlags']}"
 		},
 		"CryptCATAdminAcquireContext2": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr'}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'Guid', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'CERT_STRONG_SIGN_PARA', 'ot': 'struct'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['phCatAdmin', 'pgSubsystem', 'pwszHashAlgorithm', 'pStrongHashPolicy', 'dwFlags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, 'disp': 2}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'Guid', 'ot': 'struct'}, 'disp': 1}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'CERT_STRONG_SIGN_PARA', 'ot': 'struct'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['phCatAdmin', 'pgSubsystem', 'pwszHashAlgorithm', 'pStrongHashPolicy', 'dwFlags']}"
 		},
 		"CryptCATAdminAddCatalog": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr'}, 'arg_names': ['hCatAdmin', 'pwszCatalogFile', 'pwszSelectBaseName', 'dwFlags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, 'arg_names': ['hCatAdmin', 'pwszCatalogFile', 'pwszSelectBaseName', 'dwFlags']}"
 		},
 		"CryptCATAdminCalcHashFromFileHandle": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['hFile', 'pcbHash', 'pbHash', 'dwFlags']}"
 		},
 		"CryptCATAdminCalcHashFromFileHandle2": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['hCatAdmin', 'hFile', 'pcbHash', 'pbHash', 'dwFlags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt32'}, 'disp': 0}, {'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'disp': 2}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['hCatAdmin', 'hFile', 'pcbHash', 'pbHash', 'dwFlags']}"
 		},
 		"CryptCATAdminEnumCatalogFromHash": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr'}, 'disp': 0}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr'}, 'arg_names': ['hCatAdmin', 'pbHash', 'cbHash', 'dwFlags', 'phPrevCatInfo']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, {'_t': 'ptr', 'pts_to': {'_t': 'char', 'signed': false, 'label': 'Byte'}, 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'ptr', 'pts_to': {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, 'disp': 0}], 'returnty': {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, 'arg_names': ['hCatAdmin', 'pbHash', 'cbHash', 'dwFlags', 'phPrevCatInfo']}"
 		},
 		"CryptCATAdminPauseServiceForBackup": {
 			"proto": "{'_t': 'func', 'args': [{'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['dwFlags', 'fResume']}"
 		},
 		"CryptCATAdminReleaseCatalogContext": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['hCatAdmin', 'hCatInfo', 'dwFlags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, {'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['hCatAdmin', 'hCatInfo', 'dwFlags']}"
 		},
 		"CryptCATAdminReleaseContext": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['hCatAdmin', 'dwFlags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['hCatAdmin', 'dwFlags']}"
 		},
 		"CryptCATAdminRemoveCatalog": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['hCatAdmin', 'pwszCatalogFile', 'dwFlags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['hCatAdmin', 'pwszCatalogFile', 'dwFlags']}"
 		},
 		"CryptCATAdminResolveCatalogPath": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'CATALOG_INFO', 'ot': 'struct'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['hCatAdmin', 'pwszCatalogFile', 'psCatInfo', 'dwFlags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'CATALOG_INFO', 'ot': 'struct'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['hCatAdmin', 'pwszCatalogFile', 'psCatInfo', 'dwFlags']}"
 		},
 		"CryptCATAllocSortedMemberInfo": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'CRYPTCATMEMBER', 'ot': 'struct'}}, 'arg_names': ['hCatalog', 'pwszReferenceTag']}"
@@ -63,7 +63,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': 'ptr', 'pts_to': {'_t': 'func', 'args': [{'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}, {'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}], 'returnty': {'_t': 'bot', 'label': 'Void'}, 'arg_names': ['dwErrorArea', 'dwLocalError', 'pwszLine']}, 'disp': 1}], 'returnty': {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'CRYPTCATCDF', 'ot': 'struct'}}, 'arg_names': ['pwszFilePath', 'pfnParseError']}"
 		},
 		"CryptCATCatalogInfoFromContext": {
-			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': 'int', 'label': 'Int'}, 'label': 'IntPtr', 'disp': 1}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'CATALOG_INFO', 'ot': 'struct'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['hCatInfo', 'psCatInfo', 'dwFlags']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': 'len', 'addr': null, 'length': null, 'label': 'IntPtr', 'signed': true}, {'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'CATALOG_INFO', 'ot': 'struct'}, 'disp': 0}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['hCatInfo', 'psCatInfo', 'dwFlags']}"
 		},
 		"CryptCATClose": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['hCatalog']}"
@@ -93,7 +93,7 @@
 			"proto": "{'_t': 'func', 'args': [{'_t': 'ptr', 'pts_to': {'_t': '_ref', 'name': 'CRYPTCATSTORE', 'ot': 'struct'}, 'disp': 0}], 'returnty': {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, 'arg_names': ['pCatStore']}"
 		},
 		"CryptCATOpen": {
-			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'CRYPTCAT_OPEN_FLAGS', 'ot': 'enum'}, {'_t': 'ptr', 'pts_to': {'_t': 'int', 'signed': false, 'label': 'UInt'}, 'label': 'UIntPtr', 'disp': 1}, {'_t': '_ref', 'name': 'CRYPTCAT_VERSION', 'ot': 'enum'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, 'arg_names': ['pwszFileName', 'fdwOpenFlags', 'hProv', 'dwPublicVersion', 'dwEncodingType']}"
+			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'PWSTR', 'ot': 'ptr'}, {'_t': '_ref', 'name': 'CRYPTCAT_OPEN_FLAGS', 'ot': 'enum'}, {'_t': 'len', 'signed': false, 'addr': null, 'length': null, 'label': 'UIntPtr'}, {'_t': '_ref', 'name': 'CRYPTCAT_VERSION', 'ot': 'enum'}, {'_t': 'int', 'signed': false, 'label': 'UInt32'}], 'returnty': {'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}, 'arg_names': ['pwszFileName', 'fdwOpenFlags', 'hProv', 'dwPublicVersion', 'dwEncodingType']}"
 		},
 		"CryptCATPersistStore": {
 			"proto": "{'_t': 'func', 'args': [{'_t': '_ref', 'name': 'HANDLE', 'ot': 'ptr'}], 'returnty': {'_t': '_ref', 'name': 'BOOL', 'ot': 'int'}, 'arg_names': ['hCatalog']}"
